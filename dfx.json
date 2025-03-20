@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "AntyScamICP_backend": {
+      "main": "src/AntyScamICP_backend/main.mo",
+      "type": "motoko"
+    },
+    "AntyScamICP_frontend": {
+      "dependencies": [
+        "AntyScamICP_backend"
+      ],
+      "source": [
+        "src/AntyScamICP_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "AntyScamICP_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
