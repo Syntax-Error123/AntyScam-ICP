@@ -1,0 +1,88 @@
+.foot-body{
+    margin-top: 80px;
+    gap: 5px;
+    background-color: var(--col-overlay-black);
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.newsletter{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.newsletter input{
+    height: min-content;
+    align-self: center;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 1em;
+    text-align: center;
+    background-color: var(--col-body-black);
+    color: var(--col-prim-gray);
+    transition: outline .1s ease;
+}
+
+.newsletter input:focus{
+    background-color: transparent;
+    color: var(--col-milky-white);
+    outline: 2px var(--col-amb-red) dashed;
+}
+
+.links{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    max-width: 300px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.links a{
+    color: var(--col-prim-gray);
+    text-decoration: none;
+}
+
+.links p{
+    margin: 0;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color .2s ease-in;
+}
+
+.links p:hover{
+    color: var(--col-amb-red);
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.socials .social-icon{
+    cursor: pointer;
+    color: white;
+}
+
+.copyright{
+    margin-top: 10px;
+    color: white;
+}
+
+.copyright span{
+    color: var(--col-amb-red);
+}

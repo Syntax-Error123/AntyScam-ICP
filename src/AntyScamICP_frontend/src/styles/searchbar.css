@@ -1,0 +1,106 @@
+.s-container {
+    align-self: center;
+    position: relative;
+    --size-button: 20px;
+    color: white;
+    background-color: var(--col-overlay-black);
+    border-radius: 50%;
+    scale: 0.9;
+  }
+
+  .search-results{
+    color: var(--col-amb-red);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 50px;
+    z-index: 10;
+    width: 90%;
+    background: var(--col-overlay-black);
+    padding: 10px;
+  }
+
+  .search-results .css-ir8470-JoyCircularProgress-root{
+    transform: translateX(-50%) !important;
+    z-index: 10 !important;
+    position: relative !important;
+    top: 0 !important;
+    left: 50% !important;
+  }
+
+  .search-result-item{
+    color: var(--col-milky-white);
+    width: -webkit-fill-available;
+  }
+
+  .search-result-item:hover{
+    cursor: pointer;
+    background-color: var(--col-body-black);
+    border-radius: 10px;
+  }
+
+  .search-result-item p{
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .search-result-item::after{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--col-prim-gray);
+  }
+  
+  .input {
+    padding-left: var(--size-button);
+    height: calc(var(--size-button) + 10px);
+    width: calc(var(--size-button) - 10px);
+    font-size: 15px;
+    border: none;
+    opacity: 0;
+    color: rgba(0, 0, 0, 0);
+    outline: none;
+    transition: all ease 0.3s;
+    background-color: var(--col-overlay-black);
+    border-radius: 50px;
+    place-content: center;
+    cursor: pointer;
+  }
+  
+  .input:focus,
+  .input:not(:invalid) {
+    width: 120px;
+    cursor: text;
+    color: var(--col-milky-white);
+    opacity: 1;
+    outline: var(--col-amb-red) 2px dashed;
+    text-align: start;
+    margin-left: 2px;
+    padding-left: 35px;
+  }
+  
+  .input:focus + .icon,
+  .input:not(:invalid) + .icon {
+    pointer-events: all;
+    left: 4px;
+    cursor: pointer;
+  }
+  
+  .s-container .icon {
+    position: absolute;
+    width: var(--size-button);
+    height: var(--size-button);
+    top: 0;
+    left: 0px;
+    padding: 5px;
+    pointer-events: none;
+  }
+  
+  .s-container .icon svg {
+    width: 100%;
+    height: 100%;
+  }

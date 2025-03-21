@@ -1,0 +1,24 @@
+.qna summary{
+ color: var(--col-amb-red);
+ font-size: 1.8rem;
+}
+
+.qna summary span{
+    color: white;
+    font-weight: 900;
+}
+
+details.qna summary::marker{
+    color: var(--col-amb-red);
+}
+
+.qna p{
+ z-index: 0;   
+ border-radius: 20px;
+ background: var(--col-overlay-black);
+ padding: 20px;
+ color: var(--col-prim-gray);
+ font-size: 1.4rem;
+ box-shadow: 5px 5px 20px rgb(60, 60, 60),
+ -5px -5px 20px rgba(0, 0, 0, 0);
+}   

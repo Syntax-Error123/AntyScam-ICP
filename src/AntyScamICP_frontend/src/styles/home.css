@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html{
+    scrollbar-width: none;
+}
+
+.Pages{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

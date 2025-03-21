@@ -1,30 +1,30 @@
-import { useState } from 'react';
-import { AntyScamICP_backend } from 'declarations/AntyScamICP_backend';
+import './App.css';
+import HomePage from './pages/Home';
+import Signup from './pages/Signup';
+import AboutUs from './pages/AboutUs';
+import Careers from './pages/Careers';
+import UserGuide from './pages/UserGuide';
+import LearnHow from './pages/LearnHow';
+import UserPanel from './pages/UserPanel';
+import {ErrorHandler} from './components/reusable/CustomError';
+import { Routes, Route } from 'react-router-dom';
+import { NotAvailable } from './components/reusable/NotAvailable';
 
 function App() {
-  const [greeting, setGreeting] = useState('');
-
-  function handleSubmit(event) {
-    event.preventDefault();
-    const name = event.target.elements.name.value;
-    AntyScamICP_backend.greet(name).then((greeting) => {
-      setGreeting(greeting);
-    });
-    return false;
-  }
-
   return (
-    <main>
-      <img src="/logo2.svg" alt="DFINITY logo" />
-      <br />
-      <br />
-      <form action="#" onSubmit={handleSubmit}>
-        <label htmlFor="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
-      </form>
-      <section id="greeting">{greeting}</section>
-    </main>
+    <div className="App" style={{display:'inline-list-item'}}>
+      <ErrorHandler/>
+        <Routes>
+          <Route path='*' element={<NotAvailable/>}/>
+          <Route path='/' element={<HomePage/>}/>
+          <Route path='/u-panel' element={<UserPanel/>}/>
+          <Route path='/sign-up' element={<Signup/>}/>
+          <Route path='/abt-us' element={<AboutUs/>}/>
+          <Route path='/career' element={<Careers/>}/>
+          <Route path='/guide' element={<UserGuide/>}/>
+          <Route path='/how' element={<LearnHow/>}/>
+        </Routes>
+    </div>
   );
 }
 

@@ -1,0 +1,120 @@
+.nav-body{
+    background-color: var(--col-body-black);
+    box-shadow: var(--col-body-black) 0 1px 40px;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo a{
+    display: inherit;
+    flex: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    text-decoration: none;
+}
+
+.logo img{
+    width: 40px;
+    height: 40px;
+}
+
+.logo h2{
+    color: white;
+    margin-left: 10px;
+    font-size: 1.6rem;
+    font-weight:900;
+    letter-spacing: .1rem;
+}
+
+.nav-links{
+    display: flex;
+    flex: 6;
+    margin-left: 10px;
+    margin-right: 40px;
+    align-items: flex-start;
+    text-align: start;
+}
+
+.start-links{
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: inherit;
+    align-self: center;
+}
+
+.end-icons{
+    display: flex;
+}
+
+.nav-links.start{
+    justify-content: flex-start;
+}
+
+.nav-links.end{
+    justify-content: flex-end;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 10px 12px;
+    transition: color .2s ease-in;
+    align-self: center;
+    justify-content: center;
+}
+
+.nav-links a:hover{
+    color: var(--col-amb-red);
+}
+
+.nav-btnn{
+    flex: 1;
+    color: white;
+    text-decoration: none;
+}
+.nav-btnn button{
+    display: flex;
+    cursor: pointer;
+    padding: 4px 10px;
+    font-size: 1.1rem;
+    background-color: var(--col-amb-red);
+    border: none;
+    outline: 2px var(--col-amb-red) solid;
+    outline-offset: -2px;
+    border-radius: 16px;
+    color: inherit;
+    transition: background-color .2s ease-in, color .2s ease-in;
+}
+
+.nav-btnn img{
+    align-self: center;
+    margin-left: 10px;
+}
+
+.nav-btnn button:hover{
+    background-color: transparent;
+    color: var(--col-amb-red);
+}
+
+.MuiBadge-badge{
+    background-color: var(--col-amb-red) !important;
+    color: transparent !important;
+    line-height: normal !important;
+    top: 15% !important;
+    box-shadow: 0 0 0 1px !important;
+}

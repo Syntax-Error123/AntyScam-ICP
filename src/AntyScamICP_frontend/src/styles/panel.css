@@ -1,0 +1,29 @@
+.dash-body{
+    display: flex;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    max-height: 70vh;
+    padding: 100px 0px;
+}
+
+.selectable-list{
+    flex: 2;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.content{
+    flex: 8;
+    padding: 0px 40px;
+}
+
+.content h1{
+    color: white;
+    margin-top: 0;
+}

@@ -1,0 +1,16 @@
+.AlertContainer{
+    transform: translate(-50%, -150%);
+    animation: SlideIn forwards 5s linear;
+}
+
+@keyframes SlideIn{
+    0%, 15%{
+        transform: translate(-50%, -150%);
+    }
+    16%, 90%{
+        transform: translate(-50%, 0%);
+    }
+    91%, 100%{
+        transform: translate(-50%, -150%);
+    }
+}
